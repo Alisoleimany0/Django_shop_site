@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Deatil of {{object.title}}</h1>
+<hr>
+<p>{{object.body}}
+<a href="{% url 'blog_update' object.id %}">Update</a>
+<a href="{% url 'blog_delete' object.id %}">Delete</a>
+{% endblock %}

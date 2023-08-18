@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+            </ul>
+        </div>
+        
+        {% block content %}
+        
+        {% endblock content %}
+        
+        <div>
+            <h3>Footer</h3>
+        </div>
+        
+        
+    </body>
+</html>
